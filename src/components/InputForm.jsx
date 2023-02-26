@@ -6,7 +6,7 @@ const InputForm = () => {
         <form>
             <input type="text" />
                 <button>
-                    <i class="fa-regular fa-circle-plus"></i>
+                    <i class="fa-regular fa-comment-plus"></i>
                 </button>
         </form>
       
