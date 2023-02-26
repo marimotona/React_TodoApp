@@ -1,16 +1,29 @@
-import React from 'react'
+import { getValue } from '@testing-library/user-event/dist/utils';
+import React, { useState } from 'react'
 
-const InputForm = () => {
-  return (
-    <div className="inputForm">
-        <form>
-            <input type="text" />
-                <button>
-                    <i class="fa-regular fa-comment-plus"></i>
-                </button>
-        </form>
-      
-    </div>
+const InputForm = ({taskList, setTaskList}) => {
+
+    const [inputText, setInputText] = useState();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
+    const handleChange = (e) => {
+        setInputText(e.target.value);
+        console.log(inputText);
+    }
+
+    return (
+        <div className="inputForm">
+            <form onSubmit={handleSubmit}>
+                <input type="text" onChange={handleChange}/>
+                    <button>
+                        <i className="fa-regular fa-comment-plus"></i>
+                    </button>
+            </form>
+        
+        </div>
   )
 }
 

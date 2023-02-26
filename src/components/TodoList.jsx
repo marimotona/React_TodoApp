@@ -11,10 +11,10 @@ const TodoList = () => {
             </div>
             <div className="icons">
                 <button>
-                    <i class="fa-solid fa-check"></i>
+                    <i className="fa-solid fa-check"></i>
                 </button>
                 <button>
-                    <i class="fa-solid fa-trash"></i>
+                    <i className="fa-solid fa-trash"></i>
                 </button>
             </div>
         </div>
