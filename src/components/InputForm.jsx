@@ -27,8 +27,10 @@ export const InputForm = ({taskList, setTaskList}) => {
         <div className="inputForm">
             <form onSubmit={handleSubmit}>
                 <input type="text" onChange={handleChange} value={inputText}/> 
-                    <button>
-                        <i className="fa-regular fa-comment-plus"></i>
+                    <button type="submit" className="btn-square-pop">
+                        {/* <i className="fa-regular fa-comment-plus"></i> */}
+                        {/* <a className="btn-square-pop">BUTTON</a> */}
+                        BUTTON
                     </button>
             </form>
         
