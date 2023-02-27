@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Title />
       <InputForm taskList={taskList} setTaskList={setTaskList}/>
-      <TodoList />
+      <TodoList taskList={taskList} setTaskList={setTaskList}/>
     </div>
   );
 }

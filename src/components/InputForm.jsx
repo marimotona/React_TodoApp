@@ -1,4 +1,3 @@
-import { getValue } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react'
 
 const InputForm = ({taskList, setTaskList}) => {
@@ -7,6 +6,12 @@ const InputForm = ({taskList, setTaskList}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setTaskList([
+            ...taskList, //空のtaskListに追加する情報を入れている
+            {
+                text: inputText
+            }
+        ]);
     }
 
     const handleChange = (e) => {
