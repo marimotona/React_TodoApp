@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const InputForm = ({taskList, setTaskList}) => {
+export const InputForm = ({taskList, setTaskList}) => {
 
     const [inputText, setInputText] = useState();
 
@@ -12,6 +12,7 @@ const InputForm = ({taskList, setTaskList}) => {
                 text: inputText
             }
         ]);
+        setInputText("");
     }
 
     const handleChange = (e) => {
@@ -19,10 +20,11 @@ const InputForm = ({taskList, setTaskList}) => {
         console.log(inputText);
     }
 
+    //valueはinputされた中身
     return (
         <div className="inputForm">
             <form onSubmit={handleSubmit}>
-                <input type="text" onChange={handleChange}/>
+                <input type="text" onChange={handleChange} value={inputText}/> 
                     <button>
                         <i className="fa-regular fa-comment-plus"></i>
                     </button>
