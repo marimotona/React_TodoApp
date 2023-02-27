@@ -6,5 +6,6 @@
 
 Users have possibility to create, delete, check and uncheck todos.
 
-
+I implemented it based on this video
+（https://youtu.be/uuAdVs7sbAs）
 
