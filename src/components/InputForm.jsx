@@ -9,7 +9,9 @@ export const InputForm = ({taskList, setTaskList}) => {
         setTaskList([
             ...taskList, //空のtaskListに追加する情報を入れている
             {
-                text: inputText
+                id: taskList.length,
+                text: inputText,
+                completed: false
             }
         ]);
         setInputText("");

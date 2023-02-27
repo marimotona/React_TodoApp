@@ -38,6 +38,12 @@ body {
   justify-content: center;
 }
 
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
 .icons .fa-check {
   padding: 0.487rem .5rem;
   font-size: 20px;
@@ -55,8 +61,8 @@ body {
 }
 
 .todoText {
-  min-width: 15rem;
-  max-height: 1.8rem;
+  height: 30px;
+  width: 200px;
   padding: 0.3rem 4rem;
   background: white;
 }
@@ -64,4 +70,6 @@ body {
 
 button {
   border: none;
+  text-align: center;
+  background-color: rgb(178, 186, 193);
 }
